@@ -13,7 +13,11 @@ function [pos test] = getPositiveData(directory, im_regex, lm_regex, split)
   % get the number of examples
   numposim = length(posim);
   numposlm = length(poslm);
+<<<<<<< HEAD
   if ~isequal(numposim, numposlm) error('The number of matched images and annotations is not equal: %d != %d', numposim, numposlm); end
+=======
+if ~isequal(numposim, numposlm) error('The number of matched images and annotations is not equal: %d != %d', numposim, numposlm); end
+>>>>>>> eb61bceb2fa4ef90a09894b29db21f0749898eb8
   
   % import the examples into the structure
   for n = 1:numposim
